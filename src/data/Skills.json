@@ -1,0 +1,82 @@
+{
+    "skills": [
+        {
+            "id": 1,
+            "name": "Desarrollo web",
+            "percent": 90,
+            "color": "#FF6464"
+        },
+        {
+            "id": 2,
+            "name": "Seguridad y autenticación",
+            "percent": 82,
+            "color": "#9272D4"
+        },
+        {
+            "id": 3,
+            "name": "Gestión y automatización",
+            "percent": 83,
+            "color": "#5185D4"
+        },
+        {
+            "id": 4,
+            "name": "Herramientas y tecnologías",
+            "percent": 70,
+            "color": "#CA56F2"
+        }
+    ],
+    "knowledge": [
+        {
+            "id": 1,
+            "name": "PHP"
+        },
+        {
+            "id": 2,
+            "name": "Framework Laravel"
+        },
+        {
+            "id": 3,
+            "name": "React"
+        },
+        {
+            "id": 4,
+            "name": "TypeScript"
+        },
+        {
+            "id": 5,
+            "name": "Js"
+        },
+        {
+            "id": 6,
+            "name": "Liveware"
+        },
+        {
+            "id": 7,
+            "name": "PostgreSQL"
+        },
+        {
+            "id": 8,
+            "name": "MySQL"
+        },
+        {
+            "id": 9,
+            "name": "Microsoft SQL Server"
+        },
+        {
+            "id": 10,
+            "name": " Tailwind CSS"
+        },
+        {
+            "id": 11,
+            "name": " Bootstrap"
+        },
+        {
+            "id": 12,
+            "name": " Git"
+        },
+        {
+            "id": 13,
+            "name": "Microsoft Office"
+        }
+    ]
+}

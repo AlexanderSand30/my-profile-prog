@@ -1,0 +1,50 @@
+{
+    "educations": [
+        {
+            "id": 1,
+            "profession": "Ingenieria de Sistemas",
+            "study_place": "Universidad Nacional Pedro Ruiz Gallo, Perú",
+            "dates": "2017 - 2022"
+        }
+    ],
+    "experiences": [
+        {
+            "id": 1,
+            "occupation": "Programador Full-Stack",
+            "place": "Clinica del Pacifico, Perú",
+            "dates": "2022 - Actualidad"
+        },
+        {
+            "id": 2,
+            "occupation": "Programador Junior",
+            "place": "Municipalidad Provincial de Chiclayo, Perú",
+            "dates": "2021 - 2022"
+        }
+    ],
+    "others_studies": [
+        {
+            "id": 1,
+            "name": "React y TypeScript – La guía Completa",
+            "place": "Udemy",
+            "dates": "19 de agosto del 2024"
+        },
+        {
+            "id": 2,
+            "name": "Modern JavaScript; ES6 Basics",
+            "place": "Coursera",
+            "dates": " 15 de mayo del 2022"
+        },
+        {
+            "id": 3,
+            "name": "CRUD con PHP, MySQL y JS en el Modelo MVC",
+            "place": "Udemy",
+            "dates": "29 de abril del 2022"
+        },
+        {
+            "id": 4,
+            "name": "Web Applications in PHP",
+            "place": "Coursera",
+            "dates": "13 de noviembre del 2021"
+        }
+    ]
+}
