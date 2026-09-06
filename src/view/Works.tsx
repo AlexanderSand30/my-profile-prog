@@ -1,5 +1,5 @@
 import SystemSoftImg from "./../assets/img/proyects/System-soft.png";
-import SystemContImg from "./../assets/img/proyects/system-cont.png";
+import SystemContImg from "./../assets/img/proyects/System-cont.png";
 import SystemPlusImg from "./../assets/img/proyects/system-plus.png";
 import GestionMercados from "./../assets/img/proyects/gestion-mercados.jpg";
 
