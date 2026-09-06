@@ -1,125 +1,90 @@
-import { Link } from "react-router-dom";
-import AboutMeImg from "./../assets/img/aboutme.jpg"
+import AboutMeImg from "./../assets/img/aboutme.jpg";
+
+const personalInfo = [
+    { label: "Ubicación", value: "Mochumi, Lambayeque, Perú", icon: "bx-map", href: "https://www.google.com/maps/search/?api=1&query=Mochumi+Lambayeque+Peru" },
+    { label: "Correo", value: "alexandersandovalbaldera@gmail.com", icon: "bx-envelope", href: "mailto:alexandersandovalbaldera@gmail.com" },
+    { label: "Teléfono", value: "+51 995 154 293", icon: "bx-phone-call", href: "tel:+51995154293" },
+];
+
+const capabilities = [
+    {
+        title: "Productos web",
+        description: "Construyo interfaces claras y rápidas con React, TypeScript y Tailwind CSS, cuidando cada detalle de la experiencia.",
+        icon: "bx-layout",
+        accent: "about-icon-lime",
+    },
+    {
+        title: "APIs y backend",
+        description: "Diseño APIs REST mantenibles con Laravel y PHP, conectando reglas de negocio, autenticación y datos de forma segura.",
+        icon: "bx-code-alt",
+        accent: "about-icon-coral",
+    },
+    {
+        title: "Procesos eficientes",
+        description: "Transformo tareas manuales en sistemas útiles para equipos de salud, contabilidad y operaciones.",
+        icon: "bx-line-chart",
+        accent: "about-icon-blue",
+    },
+];
 
 export default function About() {
     return (
-        <section>
-            <div className="lg:rounded-2xl bg-[#111111]  px-4 sm:px-5 md:px-10 lg:px-20 ">
-                <div className="aos-init aos-animate" data-aos="fade">
-                    <div className="py-12">
-                        <h2 className=" after-effect after:left-52 mt-12 lg:mt-0">Sobre Mi</h2>
-                        <div className="grid grid-cols-12 md:gap-10 pt-4 md:pt-[40px] items-center">
-                            <div className="col-span-12 md:col-span-4">
-                                <img src={AboutMeImg} className="w-full md:w-[330px] md:h-[400px] object-cover overflow-hidden rounded-[35px] mb-3 md:mb-0" alt="" />
-                            </div>
-                            <div className="col-span-12 md:col-span-8 space-x-2.5">
-                                <div className="md:mr-12 xl:mr-16">
-                                    <h3 className="text-2xl font-medium text-white mb-2.5">
-                                        ¿Quien soy?
-                                    </h3>
-                                    <p className="text-gray-400 leading-7 text-lg">
-                                        Soy desarrollador full stack con experiencia en el desarrollo de aplicaciones web utilizando tecnologías como Laravel, React, TypeScript.
-                                        A lo largo de mi trayectoria he participado en proyectos relacionados con gestión clínica, sistemas contables y salud ocupacional,
-                                        desarrollando APIs robustas, interfaces eficientes y optimizando procesos clave.
-                                    </p>
-                                    <p className="text-gray-400 leading-7 text-lg mt-2.5">
-                                        Me considero una persona comprometida, orientada a soluciones, con capacidad de adaptación y enfoque en escribir código limpio,
-                                        mantenible y escalable.
-                                    </p>
-                                </div>
-                                <div>
-                                    <h3 className="text-2xl font-medium text-white my-5">
-                                        Informacion Personal
-                                    </h3>
-                                    <div className=" grid grid-cols-1 sm:grid-cols-2 gap-6">
-                                        <div className="flex">
-                                            <span className="text-pink-600 bg-[#212425] shadow mr-2.5 flex items-center justify-center rounded-md text-lg w-12">
-                                                <i className='bx bx-mobile-alt text-3xl' ></i>
-                                            </span>
-                                            <div className="space-y-1">
-                                                <p className="text-xs text-gray-300">Télefono</p>
-                                                <h6 className="font-medium text-white">
-                                                    <span className="hover:text-[#FA5252] duration-300 transition">
-                                                        +51 995 154 293
-                                                    </span>
-                                                </h6>
-                                            </div>
-                                        </div>
-                                        <div className="flex">
-                                            <span className="text-red-600 bg-[#212425] shadow mr-2.5 flex items-center justify-center rounded-md text-lg w-12">
-                                                <i className='bx bx-map text-3xl' ></i>
-                                            </span>
-                                            <div className="space-y-1">
-                                                <p className="text-xs text-gray-300">Ubicación</p>
-                                                <h6 className="font-medium text-white">
-                                                    <span className="font-medium">
-                                                        Mochumi, Lambayeque, Peru
-                                                    </span>
-                                                </h6>
-                                            </div>
-                                        </div>
-                                        <div className="flex">
-                                            <span className="text-cyan-600 bg-[#212425] shadow mr-2.5 flex items-center justify-center rounded-md text-lg w-12">
-                                                <i className='bx bx-envelope text-3xl' ></i>
-                                            </span>
-                                            <div className="space-y-1">
-                                                <p className="text-xs text-gray-300">Correo Electrónico</p>
-                                                <h6 className="font-medium text-white">
-                                                    <Link to={'mailto:alexandersandovalbaldera@gmail.com'} className="hover:text-cyan-600 duration-300 transition">
-                                                        alexandersandovalbaldera@gmail.com
-                                                    </Link>
-                                                </h6>
-                                            </div>
-                                        </div>
-                                        <div className="flex">
-                                            <span className="text-purple-500 bg-[#212425] shadow mr-2.5 flex items-center justify-center rounded-md text-lg w-12">
-                                                <i className='bx bx-calendar text-3xl' ></i>
-                                            </span>
-                                            <div className="space-y-1">
-                                                <p className="text-xs text-gray-300">Cumpleaños</p>
-                                                <h6 className="font-medium text-white">
-                                                    <span className="font-medium">
-                                                        30 de Abril de 1999
-                                                    </span>
-                                                </h6>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        <section className="page-panel about-panel lg:rounded-2xl">
+            <div className="px-5 py-10 sm:px-8 md:px-12 md:py-14 lg:px-16">
+                <div className="mb-12">
+                    <p className="hero-kicker mb-4">Perfil profesional</p>
+                    <h1 className="after-effect">Sobre mí</h1>
+                </div>
 
-                    <div className="pb-12">
-                        <h3 className="text-[35px] dark:text-white font-medium pb-5">¡Lo que hago!</h3>
-                        <div className="grid gap-8 grid-cols-1 md:grid-cols-2 xl:grid-cols-3 ">
-                            <div className="about-box dark:bg-transparent" style={{ background: 'transparent' }}>
-                                <i className='bx bx-layout text-sky-400 text-6xl'></i>
-                                <div className="space-y-2 ">
-                                    <h3 className="text-white text-xl font-semibold">Desarrollo web</h3>
-                                    <p className=" leading-8 text-[#A6A6A6]">
-                                        Creo aplicaciones modernas, funcionales y escalables utilizando tecnologías como Laravel (PHP) para el backend y React para el frontend
-                                    </p>
-                                </div>
-                            </div>
-                            <div className="about-box dark:bg-transparent" style={{ background: 'transparent' }}>
-                                <i className='bx bx-code-alt text-yellow-500 text-6xl'></i>
-                                <div className="space-y-2 ">
-                                    <h3 className="text-white text-xl font-semibold">Api Rest</h3>
-                                    <p className=" leading-8 text-[#A6A6A6]">
-                                        Utilizo buenas prácticas para crear endpoints seguros, eficientes y fáciles de consumir por aplicaciones frontend (como React) o móviles.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+                <div className="grid items-center gap-10 lg:grid-cols-[280px_1fr] lg:gap-16">
+                    <div className="about-photo-wrap">
+                        <img src={AboutMeImg} className="about-photo" alt="Cristhian Alexander trabajando como desarrollador" />
+                        <span className="about-photo-label"><i className="bx bx-code-curly" /> Full-stack developer</span>
                     </div>
-
-                    <footer className="overflow-hidden rounded-b-2xl" style={{ background: 'transparent' }}>
-                        <p className="text-center py-6 text-zinc-400 font-semibold ">© 2025 Todos los derechos reservados
+                    <div>
+                        <p className="mb-4 text-sm font-semibold uppercase tracking-[.16em] text-[#d7f36b]">Quién soy</p>
+                        <h2 className="max-w-3xl text-3xl font-bold leading-tight text-white md:text-4xl">Desarrollo soluciones digitales que hacen más simple el trabajo.</h2>
+                        <p className="mt-6 max-w-3xl text-lg leading-8 text-[#a6aaa5]">
+                            Soy desarrollador full-stack con experiencia creando aplicaciones web para resolver necesidades reales de negocio. Trabajo con Laravel, React y TypeScript para convertir procesos complejos en productos claros, mantenibles y escalables.
                         </p>
-                    </footer>
+                        <p className="mt-4 max-w-3xl leading-7 text-[#a6aaa5]">
+                            Me caracterizan el pensamiento orientado a soluciones, la comunicación con equipos y el cuidado por escribir código limpio que pueda crecer junto al producto.
+                        </p>
+                        <div className="mt-8 flex flex-wrap gap-2">
+                            <span className="about-tag">Laravel</span><span className="about-tag">React</span><span className="about-tag">TypeScript</span><span className="about-tag">REST APIs</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="about-info-grid mt-14">
+                    {personalInfo.map((item) => (
+                        <a key={item.label} href={item.href} target={item.href.startsWith("http") ? "_blank" : undefined} rel={item.href.startsWith("http") ? "noreferrer" : undefined} className="about-info-item">
+                            <span className="about-info-icon"><i className={`bx ${item.icon}`} /></span>
+                            <span className="min-w-0"><span className="about-info-label">{item.label}</span><span className="about-info-value">{item.value}</span></span>
+                        </a>
+                    ))}
+                </div>
+
+                <div className="mt-16">
+                    <div className="mb-7 flex flex-wrap items-end justify-between gap-4">
+                        <div>
+                            <p className="hero-kicker mb-3">Cómo puedo aportar</p>
+                            <h2 className="text-3xl font-bold text-white md:text-4xl">Lo que hago mejor</h2>
+                        </div>
+                        <p className="max-w-sm text-sm leading-6 text-[#a6aaa5]">Una combinación de producto, ingeniería y atención al detalle.</p>
+                    </div>
+                    <div className="grid gap-4 md:grid-cols-3">
+                        {capabilities.map((capability) => (
+                            <article key={capability.title} className="about-capability">
+                                <span className={`about-capability-icon ${capability.accent}`}><i className={`bx ${capability.icon}`} /></span>
+                                <h3 className="mt-5 text-xl font-semibold text-white">{capability.title}</h3>
+                                <p className="mt-3 leading-7 text-[#a6aaa5]">{capability.description}</p>
+                            </article>
+                        ))}
+                    </div>
                 </div>
             </div>
+            <footer className="site-footer px-5 py-6 text-center text-sm sm:px-8">© 2025 Cristhian Alexander Sandoval Baldera</footer>
         </section>
-    )
+    );
 }

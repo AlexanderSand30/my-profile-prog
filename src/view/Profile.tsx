@@ -4,45 +4,48 @@ import curriculumPDF from './../assets/documents/Curriculum-CristhianAlexander.p
 
 export default function Profile() {
     return (
-        <section>
-            <div className="flex flex-col items-center justify-center h-[100vh] md:h-[90vh] lg:h-[80vh] xl:h-[71vh]">
-                <img
-                    src={miImagen}
-                    className="rounded-full w-[250px] h-[250px] 2xl:w-[280px] 2xl:h-[280px] border-4 border-[#1E293B] shadow-lg shadow-[#3d4c62] transform hover:scale-110 transition-transform duration-300 ease-in-out hover:rotate-2"
-                    alt="Profile Picture"
-                />
-                <h3 className="mt-6 mb-1 text-3xl font-semibold text-white text-center">
-                    Cristhian Alexander Sandoval Baldera
-                </h3>
-                <p className="mb-4 text-[#7B7B7B]">
-                    Programador Full-Stack
-                </p>
-                <div className="flex space-x-3">
-                    <Link to={'https://www.facebook.com/cristhianalexander.sandovalbaldera'} title="Facebook" target="_blank">
-                        <span className="socialbtn text-[#1773EA] hover:text-white">
-                            <i className='bx bxl-facebook text-xl' ></i>
-                        </span>
-                    </Link>
-                    <Link to={'https://www.linkedin.com/in/cristhian-sandoval-baldera-is/'} title="Linkedink" target="_blank">
-                        <span className="socialbtn text-[#0a66c2] hover:text-white">
-                            <i className='bx bxl-linkedin  text-xl' ></i>
-                        </span>
-                    </Link>
-                    <Link to={'https://www.instagram.com/cristhian_1930/'} title="Instagram" target="_blank">
-                        <span className="socialbtn text-[#c13584] hover:text-white">
-                            <i className='bx bxl-instagram text-2xl' ></i>
-                        </span>
-                    </Link>
+        <section className="home-hero grid min-h-[calc(100vh-92px)] items-center py-12 lg:grid-cols-[1fr_390px] lg:gap-20 lg:py-20">
+            <div className="order-2 lg:order-1">
+                <div className="mb-5 flex items-center gap-3">
+                    <span className="status-dot" />
+                    <p className="hero-kicker">Disponible para nuevos retos</p>
                 </div>
-                <div>
-                    <a
-                        href={curriculumPDF}
-                        download="Curriculum-Cristhian Alexander.pdf"
-                        className="flex items-center bg-gradient-to-r from-[#FA5252] hover:to-[#DD2476] duration-200 transition ease-linear hover:bg-gradient-to-l hover:from-[#DD2476] to-[#fa5252ef] px-8 py-3 text-lg text-white rounded-[35px] mt-6"
-                    >
-                        <i className='bx bx-download text-2xl mr-2 animate-bounce'></i>
-                        Download CV
+                <h1 className="max-w-3xl text-5xl font-bold leading-[.95] tracking-[-.07em] text-white sm:text-7xl lg:text-8xl">
+                    Creo productos digitales que <span className="accent-text">resuelven.</span>
+                </h1>
+                <p className="mt-7 max-w-xl text-lg leading-8 text-[#a6aaa5]">
+                    Soy Cristhian Alexander, desarrollador especializado en construir experiencias web robustas con Laravel, React y TypeScript.
+                </p>
+                <div className="mt-9 flex flex-wrap items-center gap-4">
+                    <Link to="/works" className="flex items-center gap-2 rounded-full bg-[#d7f36b] px-6 py-3 font-bold text-[#101313] transition hover:-translate-y-1">
+                        Ver proyectos <i className="bx bx-right-arrow-alt text-xl" />
+                    </Link>
+                    <a href={curriculumPDF} download="Curriculum-Cristhian Alexander.pdf" className="flex items-center gap-2 rounded-full border border-white/20 px-6 py-3 text-white transition hover:border-[#d7f36b] hover:text-[#d7f36b]">
+                        Descargar CV <i className="bx bx-download text-xl" />
                     </a>
+                </div>
+                <div className="mt-12 flex items-center gap-3">
+                    <a href="https://www.linkedin.com/in/cristhian-sandoval-baldera-is/" title="LinkedIn" target="_blank" rel="noreferrer"><span className="socialbtn text-[#63a9e8]"><i className="bx bxl-linkedin text-xl" /></span></a>
+                    <a href="https://www.instagram.com/cristhian_1930/" title="Instagram" target="_blank" rel="noreferrer"><span className="socialbtn text-[#f5a0c4]"><i className="bx bxl-instagram text-xl" /></span></a>
+                    <span className="ml-2 text-xs uppercase tracking-[.18em] text-[#a6aaa5]">Mochumi, Perú</span>
+                </div>
+            </div>
+            <div className="order-1 flex justify-center lg:order-2 lg:justify-end">
+                <div className="hero-visual">
+                    <div className="hero-orbit hero-orbit-one" />
+                    <div className="hero-orbit hero-orbit-two" />
+                    <img
+                        src={miImagen}
+                        className="hero-image relative z-10 h-64 w-64 rounded-[35%] object-cover grayscale transition duration-500 hover:grayscale-0 sm:h-80 sm:w-80"
+                        alt="Cristhian Alexander Sandoval Baldera"
+                    />
+                    <div className="hero-badge">
+                        <span className="text-2xl font-bold text-[#d7f36b]">4+</span>
+                        <span className="text-[.65rem] uppercase tracking-widest text-[#a6aaa5]">años creando</span>
+                    </div>
+                    <div className="hero-stack">
+                        <span>Laravel</span><span>React</span><span>TypeScript</span>
+                    </div>
                 </div>
             </div>
         </section>

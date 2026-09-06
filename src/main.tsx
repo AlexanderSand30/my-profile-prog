@@ -2,7 +2,7 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.tsx'
-import 'boxicons/css/boxicons.min.css';
+import 'boxicons/css/boxicons.css';
 import { BrowserRouter } from 'react-router-dom';
 
 

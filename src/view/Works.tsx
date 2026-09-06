@@ -3,121 +3,49 @@ import SystemContImg from "./../assets/img/proyects/system-cont.png";
 import SystemPlusImg from "./../assets/img/proyects/system-plus.png";
 import GestionMercados from "./../assets/img/proyects/gestion-mercados.jpg";
 
+const projects = [
+    { title: "Sistema de Gestión Clínica", place: "Clínica del Pacífico · Chiclayo", image: SystemSoftImg, type: "Gestión de operaciones", tags: ["Laravel", "React", "SQL"] },
+    { title: "Sistema de Salud Ocupacional", place: "Clínica del Pacífico · Chiclayo", image: SystemPlusImg, type: "Salud y seguimiento", tags: ["React", "TypeScript", "API REST"] },
+    { title: "Sistema Contable y RRHH", place: "Clínica del Pacífico · Chiclayo", image: SystemContImg, type: "Administración empresarial", tags: ["PHP", "Laravel", "MySQL"] },
+    { title: "Gestión de Mercados", place: "Municipalidad Provincial de Chiclayo", image: GestionMercados, type: "Gestión pública", tags: ["Web app", "Datos", "Procesos"] },
+];
+
 export default function Works() {
     return (
-        <section className="lg:rounded-2xl bg-[#111111]">
-            <div className="aos-init aos-animate" data-aos="fade">
-                <div className="container mb-8  px-4 sm:px-5 md:px-10 lg:px-[60px]">
-                    <div className="py-12">
-                        <h2 className=" after-effect after:left-52 mt-12 lg:mt-0">Portfolio</h2>
+        <section className="page-panel works-panel lg:rounded-2xl">
+            <div className="px-5 py-10 sm:px-8 md:px-12 md:py-14 lg:px-16">
+                <div className="mb-12 flex flex-wrap items-end justify-between gap-6">
+                    <div className="max-w-2xl">
+                        <p className="hero-kicker mb-4">Trabajo seleccionado</p>
+                        <h1 className="after-effect">Proyectos</h1>
+                        <p className="mt-6 text-lg leading-8 text-[#a6aaa5]">Sistemas y productos digitales creados para ordenar información, agilizar operaciones y ayudar a los equipos a trabajar mejor.</p>
                     </div>
-                    <p className="text-md text-gray-400 text-justify">
-                        A continuacion se muestra una colección de proyectos destacados en los que he colaborado, mostrando habilidades y experiencia en desarrollo web.
-                    </p>
-                    <p className="text-xs text-gray-400 text-center">* Las imagenes mostradas son referenciales*</p>
-                    <div className="flex -ml-[30px] min-h-[50vh] w-auto">
-                        <div className="bg-clip-padding p-[30px] w-1/2">
-                            <div className="rounded-lg p-6 border-[2px] border-[#212425] bg-transparent mb-8">
-                                <div className="overflow-hidden rounded-lg">
-                                    <img src={SystemSoftImg} className="w-full cursor-pointer transition duration-200 ease-in-out transform hover:scale-110 rounded-lg h-auto" alt="" />
-                                </div>
-                                <span className="pt-5 text-[14px] font-normal block text-[#A6A6A6]">
-                                    <span style={{ verticalAlign: 'inherit' }}>
-                                        <span style={{ verticalAlign: 'inherit' }}>
-                                            Programación Web
-                                        </span>
-                                    </span>
-                                </span>
-                                <h2 className="font-medium cursor-pointer text-xl duration-300 transition hover:text-[#FA5252] text-white mt-2">
-                                    <span style={{ verticalAlign: 'inherit' }}>
-                                        <span style={{ verticalAlign: 'inherit' }}>
-                                            Sistema de Gestion Clínica
-                                            <p className="text-xs">Clinica del pacifico - Chiclayo</p>
-                                        </span>
-                                    </span>
-                                </h2>
-                            </div>
-
-                            <div className="rounded-lg p-6 border-[2px] border-[#212425] bg-transparent mb-8">
-                                <div className="overflow-hidden rounded-lg">
-                                    <img src={SystemPlusImg} className="w-full cursor-pointer transition duration-200 ease-in-out transform hover:scale-110 rounded-lg h-auto" alt="" />
-                                </div>
-                                <span className="pt-5 text-[14px] font-normal block text-[#A6A6A6]">
-                                    <span style={{ verticalAlign: 'inherit' }}>
-                                        <span style={{ verticalAlign: 'inherit' }}>
-                                            Programación Web
-                                        </span>
-                                    </span>
-                                </span>
-                                <h2 className="font-medium cursor-pointer text-xl duration-300 transition hover:text-[#FA5252] text-white mt-2">
-                                    <span style={{ verticalAlign: 'inherit' }}>
-                                        <span style={{ verticalAlign: 'inherit' }}>
-                                            Sistema de Salud Ocupacional
-                                            <p className="text-xs">Clinica del pacifico - Chiclayo</p>
-                                        </span>
-                                    </span>
-                                </h2>
-                            </div>
-                        </div>
-                        <div className="bg-clip-padding p-[30px] w-1/2">
-                            <div className="rounded-lg p-6 border-[2px] border-[#212425] bg-transparent mb-8">
-                                <div className="overflow-hidden rounded-lg">
-                                    <img src={SystemContImg} className="w-full cursor-pointer transition duration-200 ease-in-out transform hover:scale-110 rounded-lg h-auto" alt="" />
-                                </div>
-                                <span className="pt-5 text-[14px] font-normal block text-[#A6A6A6]">
-                                    <span style={{ verticalAlign: 'inherit' }}>
-                                        <span style={{ verticalAlign: 'inherit' }}>
-                                            Programación Web
-                                        </span>
-                                    </span>
-                                </span>
-                                <h2 className="font-medium cursor-pointer text-xl duration-300 transition hover:text-[#FA5252] text-white mt-2">
-                                    <span style={{ verticalAlign: 'inherit' }}>
-                                        <span style={{ verticalAlign: 'inherit' }}>
-                                            Sistema de Gestion Contable y RRHH
-                                            <p className="text-xs">Clinica del pacifico - Chiclayo</p>
-                                        </span>
-                                    </span>
-                                </h2>
-                            </div>
-                            <div className="rounded-lg p-6 border-[2px] border-[#212425] bg-transparent mb-8">
-                                <div className="overflow-hidden rounded-lg">
-                                    <img src={GestionMercados} className="w-full cursor-pointer transition duration-200 ease-in-out transform hover:scale-110 rounded-lg h-auto" alt="" />
-                                </div>
-                                <span className="pt-5 text-[14px] font-normal block text-[#A6A6A6]">
-                                    <span style={{ verticalAlign: 'inherit' }}>
-                                        <span style={{ verticalAlign: 'inherit' }}>
-                                            Programación Web
-                                        </span>
-                                    </span>
-                                </span>
-                                <h2 className="font-medium cursor-pointer text-xl duration-300 transition hover:text-[#FA5252] text-white mt-2">
-                                    <span style={{ verticalAlign: 'inherit' }}>
-                                        <span style={{ verticalAlign: 'inherit' }}>
-                                            Gestion Mercados
-                                            <p className="text-xs">Municipalidad Chiclayo</p>
-                                        </span>
-                                    </span>
-                                </h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <span className="text-white text-center">
-                            <p>
-                                Todos los derechos de los productos, marcas e interfaces mostradas pertenecen a sus respectivos propietarios.
-                            </p>
-                            <p>
-                                El contenido se presenta únicamente con fines de portafolio profesional.
-                            </p>
-                        </span>
-                    </div>
+                    <span className="project-count"><strong>04</strong> proyectos destacados</span>
                 </div>
-                <footer className="overflow-hidden rounded-b-2xl" style={{ background: 'transparent' }}>
-                    <p className="text-center py-6 text-zinc-400 font-semibold ">© 2025 Todos los derechos reservados
-                    </p>
-                </footer>
+
+                <div className="projects-grid">
+                    {projects.map((project, index) => (
+                        <article key={project.title} className={`project-showcase ${index % 2 === 1 ? "project-showcase-offset" : ""}`}>
+                            <div className="project-image-wrap">
+                                <img src={project.image} alt={`Vista previa de ${project.title}`} />
+                                <span className="project-index">0{index + 1}</span>
+                            </div>
+                            <div className="pt-5">
+                                <p className="project-type">{project.type}</p>
+                                <h2 className="mt-2 text-2xl font-bold text-white">{project.title}</h2>
+                                <p className="mt-2 text-sm text-[#a6aaa5]">{project.place}</p>
+                                <div className="mt-4 flex flex-wrap gap-2">{project.tags.map((tag) => <span key={tag} className="project-tag">{tag}</span>)}</div>
+                            </div>
+                        </article>
+                    ))}
+                </div>
+
+                <div className="portfolio-note mt-14">
+                    <i className="bx bx-info-circle text-xl text-[#d7f36b]" />
+                    <p>Las imágenes son referenciales. Los productos, marcas e interfaces pertenecen a sus respectivos propietarios y se muestran con fines de portafolio profesional.</p>
+                </div>
             </div>
+            <footer className="site-footer px-5 py-6 text-center text-sm sm:px-8">© 2025 Cristhian Alexander Sandoval Baldera</footer>
         </section>
-    )
+    );
 }
